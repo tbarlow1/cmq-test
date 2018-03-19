@@ -30,7 +30,7 @@
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
-        <version>${fabric8.version}</version>
+        <version>3.0.8</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
