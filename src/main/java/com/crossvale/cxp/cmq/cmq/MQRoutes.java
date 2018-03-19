@@ -11,7 +11,7 @@ public class MQRoutes extends RouteBuilder {
     @Override
     public void configure() throws Exception {
     	
-        from("activemq:testQueue")
+        from("activemq:testqueue")
         	.choice()
         		.when(method(Evaluator.class, "evaluateStatus")).log("Customer validated.")
         		.otherwise().to("bean:notifyCustomerSupport").log("Customer support has been notified");
